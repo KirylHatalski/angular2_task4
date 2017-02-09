@@ -3,7 +3,7 @@ export const template: string = `
   <div class="table-toggler">
     <div class="table-info">
       <p>City name: {{weather.list[0].name}}</p>
-      <p>Date: {{ date | date}}</p>
+      <p>Date: {{ date | date: "shortDate" }}</p>
       <p>Temperature: {{weather.list[0].main.temp | temperature: format}}</p>
     </div>
     <label for="table-id" class="table-label"  [class.active]="tableVisibility">
